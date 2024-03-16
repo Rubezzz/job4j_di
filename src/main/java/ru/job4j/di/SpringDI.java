@@ -13,5 +13,8 @@ public class SpringDI {
         ui.print();
         ui.add(ui.askStr("Add: "));
         ui.print();
+        ui = context.getBean(StartUI.class);
+        ui.add("T T");
+        ui.print();
     }
 }
